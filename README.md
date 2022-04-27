@@ -48,9 +48,35 @@
  
  # 연결이 잘 되었는지 확인
  User $ git remote -v
+ 
+ # GitHub 업로드
+ User $ git push origin master
 ```
 
+## 6. 브랜치
+```sh
+ # branch 생성
+ User $ git branch 브랜치명
+ 
+ # branch 확인
+ User $ git branch
+ 
+ # branch 변경
+ User $ git checkout 브랜치명
+ 
+ # branch 삭제(현재 브랜치는 삭제 x)
+ User $ git branch -d 브랜치명
+ 
+ # branch 생성하자 마자 이동
+ User $ git checkout -b 브랜치명
+ 
+ # branch 끼리 병합
+ User $ git merge 병합하고자하는브랜치명
 
+ # 버전 되돌리기
+ User $ git reset --hard HEAD~ 되돌릴단계숫자 ex)git reset --hard HEAD~3
+ User $ git reset --hard 커밋아이디값
+```
 
 
 
