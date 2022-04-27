@@ -1,4 +1,4 @@
-# Git + 
+# Git + GitHub
 
 ## 1. Git이란?
 > Git(깃)은 컴퓨터 파일의 변경사항을 추적하고 여러 사용자들 간에 해당 파일 작업을 조율하기 위한 대표적인 버전 관리 시스템
@@ -74,10 +74,21 @@
  User $ git merge 병합하고자하는브랜치명
 
  # 버전 되돌리기
- User $ git reset --hard HEAD~ 되돌릴단계숫자 ex)git reset --hard HEAD~3
+ User $ git reset --hard HEAD~ 되돌릴단계 ex)git reset --hard HEAD~3
  User $ git reset --hard 커밋아이디값
+ 
+ # 브랜치 업로드(origin 별칭은 변경이 가능하나 통상적으로 origin을 사용)
+ User $ git remote add origin github주소(https://github.com/LeeHunUk/Git.git)
+ 
+ User $ git push origin 브랜치명 
+ or
+ User $ git push origin --all
 ```
 
+## 7. Clone
+```sh
+ User $ git clone github주소 폴더명
+```
 
 
 
